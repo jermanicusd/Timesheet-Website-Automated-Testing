@@ -145,7 +145,7 @@ $ie.Quit()
 #$p = ($ie.document.getElementsByTagName("iframe"))[0]
 #$q = $p.contentWindow.document
 #$t = $q.getelementbyname("d_r0_2")
-#$ie.Document.body | Out-File -FilePath "C:\Users\zy1728\Desktop\web.txt"
+#$ie.Document.body | Out-File -FilePath "C:\web.txt"
 
 #$doc.getElementsByName("username").ie8_item(0).value = "$username";
 #$doc.getElementsByName("password").ie8_item(0).value = "$password";
