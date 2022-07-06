@@ -135,8 +135,9 @@ while ($ie.Busy -eq $true) { Start-Sleep -Seconds 1; }    #wait for browser idle
 #Close Browser
 $ie.Quit()
 
+--------------------------------------------------------
 
-#Troubleshooting
+#Troubleshooting/Testing bits
 #$ie.document.getElementsByName("username").ie8_item(0).value = "$username";
 #Get-Member -InputObject $ie.document.getElementsByName("username") #.ie8_item(0).value = $username;
 #$ie.document.getElementsByName("d_r0_$dayofmonth").ie8_item(0).value = "8";
@@ -145,24 +146,6 @@ $ie.Quit()
 #$q = $p.contentWindow.document
 #$t = $q.getelementbyname("d_r0_2")
 #$ie.Document.body | Out-File -FilePath "C:\Users\zy1728\Desktop\web.txt"
-
-#Get Credentials
-#$credentials = Get-Credential 
-#$filename = "C:\Users\zy1728\Desktop\Unanet\secretfile.txt" 
-#$credentials | Export-CliXml -Path $filename
-#$credPath = "C:\Users\zy1728\Desktop\Unanet\secretfile.txt" 
-#$fileCred = Import-CliXml -Path $credPath 
-#$username = $fileCred.UserName
-
-#$cred = Get-Credential
-#$UN = $cred.UserName
-#$PWD = $cred.Password
-#$UN
-#$PWD
-
-#$Cred = Get-StoredCredential -Target unanet
-#$Cred.UserName
-#$Cred.Password
 
 #$doc.getElementsByName("username").ie8_item(0).value = "$username";
 #$doc.getElementsByName("password").ie8_item(0).value = "$password";
