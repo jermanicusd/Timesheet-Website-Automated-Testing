@@ -97,7 +97,9 @@ $doc.IHTMLDocument3_getElementById("footerSaveButton").click()
 #Close Page
 $ie.Quit()
 
-#Troubleshooting
+---------------------------------------------------------------------
+
+#Troubleshooting/Testing bits
 #Always use the following methods instead of the native ones:
 #IHTMLDocument3_getElementsByTagName
 #IHTMLDocument3_getElementsByName
@@ -119,5 +121,3 @@ $ie.Quit()
 #$Iframe = $frame.contentWindow.document
 
 #($ie.document.IHTMLDocument3_getElementsByName("loginid") |select -first 1).value = $username
-
-#https://dell.quickbase.com/db/bfvgj3c68?a=API_GenAddRecordForm&_fid_23=bn5kkvfjn-5&_fid_47=14-jermanicusd%40gmail.com&z=n2tb5
